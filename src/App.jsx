@@ -8,7 +8,7 @@ function RedirectToUpload() {
   useEffect(() => {
     navigate("/upload", { replace: true });
   }, []);
-
+ 
   return null;
 }
 
