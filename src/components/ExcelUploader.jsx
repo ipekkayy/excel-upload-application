@@ -96,6 +96,7 @@ export default function ExcelUploader() {
 
   return (
     <div className="container mt-5">
+      
       <div className="card p-4 shadow">
         <input
           key={fileKey}
@@ -106,6 +107,7 @@ export default function ExcelUploader() {
           ref={fileInputRef}
         />
         <button className="btn btn-primary w-100" onClick={() => fileInputRef.current.click()}>Excel'den Yükle</button>
+        <div className="fw-bold mt-2 ">Yükleyeceğiniz excel dosyası Ürün Adı, Fiyat, Adet, Stok şeklinde olmalı ! </div>
         {errorMessage && <div className="alert alert-danger mt-3">{errorMessage}</div>}
       </div>
 
